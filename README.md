@@ -1,5 +1,20 @@
+<div align="center">
 
 
+# DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED 3.10.9 TO WORK! 
+
+
+## I made this Index TTS2 Portable 1 click install for Windows that uses Nvidia GTX 10XX, 16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX.  During installation it will update Index TTS2, install Torch 2.8.0+CU128. Creates Launch Index TTS2 & Voices Desktop Shortcuts. All Index TTS2 updates comes directly from the original index-tts/index-tts Repository. 
+
+## Click here to jump to Install 👉 [Installation](#-Installation) 👈
+
+# [![Downloads](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total.svg)](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases)
+</div>
+
+<img width="1879" height="879" alt="index_tts" src="https://github.com/user-attachments/assets/05aaaca0-ac2b-4898-af3a-96230bc59b1c" />
+
+</div>
+</div>
 <div align="center">
 <img src='assets/index_icon.png' width="250"/>
 </div>
@@ -125,281 +140,61 @@ The key contributions of **IndexTTS2** are summarized as follows:
 | [IndexTTS](https://huggingface.co/IndexTeam/Index-TTS) | [IndexTTS](https://modelscope.cn/models/IndexTeam/Index-TTS) |
 
 
-## Usage Instructions
+# 📦 Installation
 
-### ⚙️ Environment Setup
+## Nvidia GTX 10XX, 16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX
 
-1. Ensure that you have both [git](https://git-scm.com/downloads)
-   and [git-lfs](https://git-lfs.com/) on your system.
+### All Index TTS updates comes directly from the original index tts/index tts Repository.
 
-The Git-LFS plugin must also be enabled on your current user account:
+1. Make sure you have Git installed as it will be needed to update Index TTS, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-```bash
-git lfs install
-```
 
-2. Download this repository:
+2. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
-```bash
-git clone https://github.com/index-tts/index-tts.git && cd index-tts
-git lfs pull  # download large repository files
-```
+3. Make sure that you have NVIDIA's [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) version **12.8** (or newer) installed on your system.
 
-3. Install the [uv package manager](https://docs.astral.sh/uv/getting-started/installation/).
-   It is *required* for a reliable, modern installation environment.
+4.  Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download index_tts.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
 
-> [!TIP]
-> **Quick & Easy Installation Method:**
-> 
-> There are many convenient ways to install the `uv` command on your computer.
-> Please check the link above to see all options. Alternatively, if you want
-> a very quick and easy method, you can install it as follows:
-> 
-> ```bash
-> pip install -U uv
-> ```
+5. After downloading, double click index_tts.exe and pick where you would like to extract the zip files too.
 
-> [!WARNING]
-> We **only** support the `uv` installation method. Other tools, such as `conda`
-> or `pip`, don't provide any guarantees that they will install the correct
-> dependency versions. You will almost certainly have *random bugs, error messages,*
-> ***missing GPU acceleration**, and various other problems* if you don't use `uv`.
-> Please *do not report any issues* if you use non-standard installations, since
-> almost all such issues are invalid.
-> 
-> Furthermore, `uv` is [up to 115x faster](https://github.com/astral-sh/uv/blob/main/BENCHMARKS.md)
-> than `pip`, which is another *great* reason to embrace the new industry-standard
-> for Python project management.
+6. Then open Index TTS main folder and you will see this in the root
 
-4. Install required dependencies:
 
-We use `uv` to manage the project's dependency environment. The following command
-will *automatically* create a `.venv` project-directory and then installs the correct
-versions of Python and all required dependencies:
+<img width="758" height="413" alt="index_tts1" src="https://github.com/user-attachments/assets/5327d633-0e57-450c-8954-766b209d163d" />
 
-```bash
-uv sync --all-extras
-```
 
-If the download is slow, please try a *local mirror*, for example any of these
-local mirrors in China (choose one mirror from the list below):
+</div>
 
-```bash
-uv sync --all-extras --default-index "https://mirrors.aliyun.com/pypi/simple"
+7. Then double click on the Install_Index_TTS.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
-uv sync --all-extras --default-index "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-```
+8. To launch Index TTS you can use either the Launch_Index_TTS.bat for normal VRAM or Launch_Index_TTS_LOW_VRAM.bat for Low VRAM in the current folder or the Desktop shortcut but this will Launch Normal VRAM.
 
-> [!TIP]
-> **Available Extra Features:**
-> 
-> - `--all-extras`: Automatically adds *every* extra feature listed below. You can
->   remove this flag if you want to customize your installation choices.
-> - `--extra webui`: Adds WebUI support (recommended).
-> - `--extra deepspeed`: Adds DeepSpeed support (may speed up inference on some
->   systems).
+### If this worked for you, Please give it a Star ⭐. Thank you.
+
+
+
+## Alternative Models download via `modelscope` if 'Huggingface' doesn't work for you.
+
+Use the Download_Models_Via_Modelscope.bat to download from Modelscope, it will automatically download the models into checkpoints folder.
+
+
+
+
+### Have fun!
+
+
+### 🔥 IndexTTS2 Tips
+
+
 
 > [!IMPORTANT]
-> **Important (Windows):** The DeepSpeed library may be difficult to install for
-> some Windows users. You can skip it by removing the `--all-extras` flag. If you
-> want any of the other extra features above, you can manually add their specific
-> feature flags instead.
-> 
-> **Important (Linux/Windows):** If you see an error about CUDA during the installation,
-> please ensure that you have installed NVIDIA's [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
-> version **12.8** (or newer) on your system.
-
-5. Download the required models via [uv tool](https://docs.astral.sh/uv/guides/tools/#installing-tools):
-
-Download via `huggingface-cli`:
-
-```bash
-uv tool install "huggingface-hub[cli,hf_xet]"
-
-hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints
-```
-
-Or download via `modelscope`:
-
-```bash
-uv tool install "modelscope"
-
-modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
-```
-
-> [!IMPORTANT]
-> If the commands above aren't available, please carefully read the `uv tool`
-> output. It will tell you how to add the tools to your system's path.
-
-> [!NOTE]
-> In addition to the above models, some small models will also be automatically
-> downloaded when the project is run for the first time. If your network environment
-> has slow access to HuggingFace, it is recommended to execute the following
-> command before running the code:
-> 
-> ```bash
-> export HF_ENDPOINT="https://hf-mirror.com"
-> ```
-
-
-#### 🖥️ Checking PyTorch GPU Acceleration
-
-If you need to diagnose your environment to see which GPUs are detected,
-you can use our included utility to check your system:
-
-```bash
-uv run tools/gpu_check.py
-```
-
-
-### 🔥 IndexTTS2 Quickstart
-
-#### 🌐 Web Demo
-
-```bash
-uv run webui.py
-```
-
-Open your browser and visit `http://127.0.0.1:7860` to see the demo.
-
-You can also adjust the settings to enable features such as FP16 inference (lower
-VRAM usage), DeepSpeed acceleration, compiled CUDA kernels for speed, etc. All
-available options can be seen via the following command:
-
-```bash
-uv run webui.py -h
-```
-
-Have fun!
-
-> [!IMPORTANT]
-> It can be very helpful to use **FP16** (half-precision) inference. It is faster
+> It can be very helpful to use Argument --fp16 **FP16** (half-precision) inference. It is faster
 > and uses less VRAM, with a very small quality loss.
 > 
-> **DeepSpeed** *may* also speed up inference on some systems, but it could also
-> make it slower. The performance impact is highly dependent on your specific
-> hardware, drivers and operating system. Please try with and without it,
-> to discover what works best on your personal system.
-> 
-> Lastly, be aware that *all* `uv` commands will **automatically activate** the correct
-> per-project virtual environments. Do *not* manually activate any environments
-> before running `uv` commands, since that could lead to dependency conflicts!
 
 
-#### 📝 Using IndexTTS2 in Python
 
-To run scripts, you *must* use the `uv run <file.py>` command to ensure that
-the code runs inside your current "uv" environment. It *may* sometimes also be
-necessary to add the current directory to your `PYTHONPATH`, to help it find
-the IndexTTS modules.
 
-Example of running a script via `uv`:
-
-```bash
-PYTHONPATH="$PYTHONPATH:." uv run indextts/infer_v2.py
-```
-
-Here are several examples of how to use IndexTTS2 in your own scripts:
-
-1. Synthesize new speech with a single reference audio file (voice cloning):
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "Translate for me, what is a surprise!"
-tts.infer(spk_audio_prompt='examples/voice_01.wav', text=text, output_path="gen.wav", verbose=True)
-```
-
-2. Using a separate, emotional reference audio file to condition the speech synthesis:
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "酒楼丧尽天良，开始借机竞拍房间，哎，一群蠢货。"
-tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.wav", emo_audio_prompt="examples/emo_sad.wav", verbose=True)
-```
-
-3. When an emotional reference audio file is specified, you can optionally set
-   the `emo_alpha` to adjust how much it affects the output.
-   Valid range is `0.0 - 1.0`, and the default value is `1.0` (100%):
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "酒楼丧尽天良，开始借机竞拍房间，哎，一群蠢货。"
-tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.wav", emo_audio_prompt="examples/emo_sad.wav", emo_alpha=0.9, verbose=True)
-```
-
-4. It's also possible to omit the emotional reference audio and instead provide
-   an 8-float list specifying the intensity of each emotion, in the following order:
-   `[happy, angry, sad, afraid, disgusted, melancholic, surprised, calm]`.
-   You can additionally use the `use_random` parameter to introduce stochasticity
-   during inference; the default is `False`, and setting it to `True` enables
-   randomness:
-
-> [!NOTE]
-> Enabling random sampling will reduce the voice cloning fidelity of the speech
-> synthesis.
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "哇塞！这个爆率也太高了！欧皇附体了！"
-tts.infer(spk_audio_prompt='examples/voice_10.wav', text=text, output_path="gen.wav", emo_vector=[0, 0, 0, 0, 0, 0, 0.45, 0], use_random=False, verbose=True)
-```
-
-5. Alternatively, you can enable `use_emo_text` to guide the emotions based on
-   your provided `text` script. Your text script will then automatically
-   be converted into emotion vectors.
-   It's recommended to use `emo_alpha` around 0.6 (or lower) when using the text
-   emotion modes, for more natural sounding speech.
-   You can introduce randomness with `use_random` (default: `False`;
-   `True` enables randomness):
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "快躲起来！是他要来了！他要来抓我们了！"
-tts.infer(spk_audio_prompt='examples/voice_12.wav', text=text, output_path="gen.wav", emo_alpha=0.6, use_emo_text=True, use_random=False, verbose=True)
-```
-
-6. It's also possible to directly provide a specific text emotion description
-   via the `emo_text` parameter. Your emotion text will then automatically be
-   converted into emotion vectors. This gives you separate control of the text
-   script and the text emotion description:
-
-```python
-from indextts.infer_v2 import IndexTTS2
-tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "快躲起来！是他要来了！他要来抓我们了！"
-emo_text = "你吓死我了！你是鬼吗？"
-tts.infer(spk_audio_prompt='examples/voice_12.wav', text=text, output_path="gen.wav", emo_alpha=0.6, use_emo_text=True, emo_text=emo_text, use_random=False, verbose=True)
-```
-
-> [!TIP]
-> **Pinyin Usage Notes:**
-> 
-> IndexTTS2 still supports mixed modeling of Chinese characters and Pinyin.
-> When you need precise pronunciation control, please provide text with specific Pinyin annotations to activate the Pinyin control feature.
-> Note that Pinyin control does not work for every possible consonant–vowel combination; only valid Chinese Pinyin cases are supported.
-> For the full list of valid entries, please refer to `checkpoints/pinyin.vocab`.
->
-> Example:
-> ```
-> 之前你做DE5很好，所以这一次也DEI3做DE2很好才XING2，如果这次目标完成得不错的话，我们就直接打DI1去银行取钱。
-> ```
-
-### Legacy: IndexTTS1 User Guide
-
-You can also use our previous IndexTTS1 model by importing a different module:
-
-```python
-from indextts.infer import IndexTTS
-tts = IndexTTS(model_dir="checkpoints",cfg_path="checkpoints/config.yaml")
-voice = "examples/voice_07.wav"
-text = "大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！比如说，现在正在说话的其实是B站为我现场复刻的数字分身，简直就是平行宇宙的另一个我了。如果大家也想体验更多深入的AIGC功能，可以访问 bilibili studio，相信我，你们也会吃惊的。"
-tts.infer(voice, text, 'gen.wav')
-```
 
 For more detailed information, see [README_INDEXTTS_1_5](archive/README_INDEXTTS_1_5.md),
 or visit the IndexTTS1 repository at <a href="https://github.com/index-tts/index-tts/tree/v1.5.0">index-tts:v1.5.0</a>.
