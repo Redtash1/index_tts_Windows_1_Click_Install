@@ -8,7 +8,9 @@
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
-# [![Downloads](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total.svg)](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases)
+# [![Downloads](https://img.shields.io/github/downloads/Redtash1/index_tts_Windows_1_Click_Install/total.svg)](https://github.com/Redtash1/index_tts_Windows_1_Click_Install/releases)
+
+
 </div>
 
 <img width="1879" height="879" alt="index_tts" src="https://github.com/user-attachments/assets/05aaaca0-ac2b-4898-af3a-96230bc59b1c" />
@@ -153,7 +155,7 @@ The key contributions of **IndexTTS2** are summarized as follows:
 
 3. Make sure that you have NVIDIA's [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) version **12.8** (or newer) installed on your system.
 
-4.  Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download index_tts.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
+4.  Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download index_tts.exe from here 👉 [Index TTS2 Windows 1 Click Install](https://github.com/Redtash1/index_tts_Windows_1_Click_Install/releases) 👈 or from the Releases section at the top right of this page.
 
 5. After downloading, double click index_tts.exe and pick where you would like to extract the zip files too.
 
