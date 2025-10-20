@@ -8,7 +8,8 @@
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
-# [![Downloads](https://img.shields.io/github/downloads/Redtash1/index_tts_Windows_1_Click_Install/total.svg)](https://github.com/Redtash1/index_tts_Windows_1_Click_Install/releases)
+# ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Redtash1/index_tts_Windows_1_Click_Install/total?style=for-the-badge&labelColor=orange&color=0000ff)
+
 
 
 </div>
