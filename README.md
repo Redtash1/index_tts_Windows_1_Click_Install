@@ -170,7 +170,7 @@ The key contributions of **IndexTTS2** are summarized as follows:
 
 </div>
 
-7. Then double click on the Install_Index_TTS.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
+7. Then double click on the Install_Index_TTS.bat to start the installation. It will install everything and download the models via Huggingface. If for some reason Huggingface doesn't work in your Country, I included a Download_Models_Via_Modelscope.bat. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
 8. To launch Index TTS you can use either the Launch_Index_TTS.bat for normal VRAM or Launch_Index_TTS_LOW_VRAM.bat for Low VRAM in the current folder or the Desktop shortcut but this will Launch Normal VRAM.
 
